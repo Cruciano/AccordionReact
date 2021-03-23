@@ -3,7 +3,7 @@ import css from "./Components/accordeon.module.css";
 import Item from "./Components/item";
 import {useState} from 'react';
 
-function App(props) {
+function App() {
     const [itemsData, setItems] = useState([
         {
             title: "title1",
