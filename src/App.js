@@ -6,17 +6,27 @@ import {useState} from 'react';
 function App() {
     const [itemsData, setItems] = useState([
         {
-            title: "title1",
+            title: "How many team can I invite?",
             content: "Some Text",
             isOpen: false
         },
         {
-            title: "title2",
+            title: "What is the maximum file upload size?",
             content: "Some Text",
             isOpen: false
         },
         {
-            title: "title3",
+            title: "How do I reset my password?",
+            content: "Some Text",
+            isOpen: false
+        },
+        {
+            title: "Can I cancel my subscription?",
+            content: "Some Text",
+            isOpen: false
+        },
+        {
+            title: "Do you provide additional support?",
             content: "Some Text",
             isOpen: false
         },
@@ -35,14 +45,20 @@ function App() {
 
     return (
         <div className={css.App}>
-            <div className={css.wrapper}>
-                <h2 className={css.header}>Main Title</h2>
-                <div className={css.accordeon}>
-                    {itemsData.map((el, i) =>
-                        <Item itemData={el}
-                              index={i}
-                              toggleItems={toggleItems}/>)}
+            <div className={css.background}>
+                <div className={css.img_block}>
+
                 </div>
+                <div>
+                    <h2 className={css.header}>Main Title</h2>
+                    <div className={css.accordeon}>
+                        {itemsData.map((el, i) =>
+                            <Item itemData={el}
+                                  index={i}
+                                  toggleItems={toggleItems}/>)}
+                    </div>
+                </div>
+
             </div>
         </div>);
     }
