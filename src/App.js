@@ -7,27 +7,27 @@ function App() {
     const [itemsData, setItems] = useState([
         {
             title: "How many team can I invite?",
-            content: "Some Text",
+            content: "You can invite up to 2 additional users on the Free plan. There is no limit on team members for the Premium plan.",
             isOpen: false
         },
         {
             title: "What is the maximum file upload size?",
-            content: "Some Text",
+            content: "No more than 2GB. All files in your account must fit your allotted storage space.",
             isOpen: false
         },
         {
             title: "How do I reset my password?",
-            content: "Some Text",
+            content: "Click “Forgot password” from the login page or “Change password” from your profile page. A reset link will be emailed to you.",
             isOpen: false
         },
         {
             title: "Can I cancel my subscription?",
-            content: "Some Text",
+            content: "Yes! Send us a message and we’ll process your request no questions asked.",
             isOpen: false
         },
         {
             title: "Do you provide additional support?",
-            content: "Some Text",
+            content: "Chat and email support is available 24/7. Phone lines are open during normal business hours.",
             isOpen: false
         },
     ]);

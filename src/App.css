@@ -1,9 +1,9 @@
 .App {
-    font-size: 12px;
+
 }
 
 .item {
-    border-bottom: solid 1px #DCDCE8;
+    border-bottom: solid 1px  hsl(240, 5%, 91%);
     margin: 20px 100px 0 0;
     padding-bottom: 20px;
 }
@@ -14,6 +14,7 @@
 }
 
 .item.open .question {
+    font-weight: bold;
     margin-bottom: 15px;
 }
 
@@ -35,11 +36,16 @@
     transform: translateY(-50%) rotate(180deg);
 }
 
+.item .question:hover{
+    color: hsl(14, 88%, 65%);
+}
+
 .item .answer {
     opacity: 0;
     max-height: 0px;
     overflow-y: hidden;
     transition: all 0.4s ease;
+    color: hsl(240, 6%, 50%);
 }
 
 .item.open .answer {
