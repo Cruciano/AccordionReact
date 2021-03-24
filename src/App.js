@@ -46,10 +46,7 @@ function App() {
     return (
         <div className={css.App}>
             <div className={css.background}>
-                <div className={css.img_block}>
-
-                </div>
-                <div>
+                <div className={css.accordion}>
                     <h2 className={css.header}>Faq</h2>
                     <div className={css.faqs}>
                         {itemsData.map((el, i) =>

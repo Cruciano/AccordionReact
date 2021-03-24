@@ -15,12 +15,34 @@
     grid-row: 2 / 3;
     background-color: white;
     border-radius: 30px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    background-image: url("./images/bg-pattern-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: -600px -300px;
 }
 
-.img_block {
+.background::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-image: url("./images/illustration-woman-online-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: -100px 50px;
+}
 
+.background::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    right: -14%;
+    background-image: url("./images/illustration-box-desktop.svg");
+    background-repeat: no-repeat;
+}
+
+.accordion {
+    padding-left: 50%;
 }
 
 .header {
