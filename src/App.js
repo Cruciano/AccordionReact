@@ -50,8 +50,8 @@ function App() {
 
                 </div>
                 <div>
-                    <h2 className={css.header}>Main Title</h2>
-                    <div className={css.accordeon}>
+                    <h2 className={css.header}>Faq</h2>
+                    <div className={css.faqs}>
                         {itemsData.map((el, i) =>
                             <Item itemData={el}
                                   index={i}

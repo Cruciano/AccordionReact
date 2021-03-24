@@ -1,3 +1,49 @@
 .App {
+    font-size: 12px;
+}
 
+.item {
+    border-bottom: solid 1px #DCDCE8;
+    margin: 20px 100px 0 0;
+    padding-bottom: 20px;
+}
+
+.item .question {
+    position: relative;
+    transition: all 0.4s ease;
+}
+
+.item.open .question {
+    margin-bottom: 15px;
+}
+
+.item .question::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    background-image: url('./Components/images/icon-arrow-down.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: all 0.4s ease;
+}
+
+.item.open .question::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
+.item .answer {
+    opacity: 0;
+    max-height: 0px;
+    overflow-y: hidden;
+    transition: all 0.4s ease;
+}
+
+.item.open .answer {
+    opacity: 1;
+    max-height: 100px;
+    transition: all 0.4s ease;
 }
